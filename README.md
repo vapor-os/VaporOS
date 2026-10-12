@@ -1,8 +1,18 @@
-# SakuraOS (web deploy build)
+# SakuraOS UBG
 
-**An unblocked games site, proxy browser and live desktop that runs entirely in your browser.**
+**An all-in-one unblocked gaming platform that runs entirely in your browser — no install, no extensions, no backend.**
 
-SakuraOS is a self hosted web desktop built for people who want to play games and browse the web on restricted networks. One folder holds a games hub with more than 2,100 titles, a full proxy browser with two switchable engines, a live wallpaper engine and a set of desktop apps. Start the bundled server, open the page, and the whole thing runs from your own machine.
+SakuraOS UBG is a web-based unblocked games site built as a full desktop experience. Open the page and you get a complete operating-system-style environment with a start menu, taskbar, dock and windowed apps, packed with:
+
+- **Games hub — 2,100+ titles** in one searchable library: 105 games bundled locally that open instantly (even offline), plus thousands more streamed from three online catalogs (UBG Hyper, DuckMath, GS & COS) with cover art, instant search and source toggles.
+- **Proxy browsers** — a real browser inside the site, powered by two switchable proxy engines (Ultraviolet and Scramjet), with tabs, bookmarks, history, zoom, fullscreen, a stealth window and 14 search engines with live suggestions.
+- **Discord-style chat app** — a themed chat experience matching the look and feel of Discord, built into the desktop.
+- **YouTube copy** — a full YouTube-style client with a music player, search, channels and playback inside the OS.
+- **59 live wallpapers** — animated video wallpapers with poster-frame picker, brightness/blur/night-light filters and adaptive theming.
+- **A suite of themed apps** — Veloura, Hanakuro, Sakurune, Kumora, Sakumo, Kurova, Numera, Sakuro, Kurocast, Nexora and Kuroshi — plus a settings app covering themes, accents, fonts, language, cursor, device metrics and a tab cloak that disguises the browser tab.
+- **Privacy by design** — everything runs client-side in your browser. No accounts, no analytics, no server of ours sees anything; your bookmarks, history and settings stay in your own browser's local storage.
+
+Deployable to any static host (GitHub Pages, Netlify, Cloudflare Pages) with no build step, and runnable locally with the bundled optional server.
 
 ---
 
@@ -41,7 +51,7 @@ SakuraOS is a self hosted web desktop built for people who want to play games an
 
 ### Privacy
 
-- Everything is served from your own machine over `localhost`. There is no backend, no account and no analytics.
+- Everything runs client-side in your browser. There is no backend, no account and no analytics.
 - Your bookmarks, history and settings stay in your browser's local storage.
 - The only traffic that leaves your machine is the sites you choose to open through the proxy, and the optional game catalog refresh.
 
@@ -150,7 +160,9 @@ None of them are needed to run the site. They are source material and backups.
 
 ## Disclaimer
 
-This project exists for people who want to play games and browse the web on restricted networks. Using it is entirely your own choice and your own responsibility. If you get in trouble at school, at work or anywhere else for using this site, that is on you and not on the creator of this project. Check your local rules before you use it.
+This project exists for people who want to play games and browse the web on restricted networks. Using it is entirely your own choice and your own responsibility.
+
+**If you use this site and get in trouble — at school, at work, or anywhere else — that is on you and not on the creator of this project.** The creator is not responsible for any consequences arising from its use. Check your local rules before you use it.
 
 ---
 
