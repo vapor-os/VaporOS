@@ -116,7 +116,7 @@ Drag this folder into Netlify's deploy UI, or point the service at this repo wit
 - **Subpaths are supported.** Every service worker registration, proxy runtime path and Scramjet/Ultraviolet prefix is computed from the page's own directory at runtime, so hosting under `https://host/some/folder/` works the same as the domain root.
 - **`/api/suggest` and `/api/presence` have graceful fallbacks.** Those two endpoints existed only in the local Node server. On static hosts the omnibox switches to the engines' public suggestion feeds (JSONP/CORS) and the presence counter falls back to counting this browser's own copies. Nothing breaks.
 - **The proxy uses public wisp servers** (default `wss://invisiproxy.com/wisp/`, changeable in the browser's Settings), so browsing works without you hosting any backend.
-- Files larger than ~50 MB (`gsh-54.gz`, `HANAKURO.html`, `Sakarune.html`, `SakuraOS v1.3.html`) are under GitHub's 100 MB per-file limit, so the repo pushes fine — the first push is just slow.
+- Files larger than ~50 MB (`gsh-54.gz`, `HANAKURO.html`, `sakarune.html`, `SakuraOS v1.3.html`) are under GitHub's 100 MB per-file limit, so the repo pushes fine — the first push is just slow.
 
 ---
 
@@ -135,7 +135,7 @@ Drag this folder into Netlify's deploy UI, or point the service at this repo wit
 | `uv/`, `scram/`, `baremux/`, `epoxy/`, `libcurl/` | The same proxy files at top level. |
 | `server.mjs` | Static server plus the `/api/suggest` search proxy for the browser. |
 | `sakura-local-server.js` | Server for the standalone SakuraOS desktop build. |
-| `HANAKURO.html`, `Sakarune.html`, `kuroshi.html` | Standalone single file builds of the sibling projects. |
+| `HANAKURO.html`, `sakarune.html`, `kuroshi.html` | Standalone single file builds of the sibling projects. |
 
 ---
 
@@ -162,7 +162,7 @@ None of them are needed to run the site. They are source material and backups.
 
 This project exists for people who want to play games and browse the web on restricted networks. Using it is entirely your own choice and your own responsibility.
 
-**If you use this site and get in trouble — at school, at work, or anywhere else — that is on you and not on the creator of this project.** The creator is not responsible for any consequences arising from its use. Check your local rules before you use it.
+**If you use this site and get in trouble at school, at work, or anywhere else that is on you and not on the creator of this project.** The creator is not responsible for any consequences arising from its use. Check your local rules before you use it.
 
 ---
 
