@@ -1,16 +1,16 @@
 # SakuraOS UBG
 
-**An all-in-one unblocked gaming platform that runs entirely in your browser — no install, no extensions, no backend.**
+**An all-in-one unblocked gaming platform that runs entirely in your browser  no install, no extensions, no backend.**
 
 SakuraOS UBG is a web-based unblocked games site built as a full desktop experience. Open the page and you get a complete operating-system-style environment with a start menu, taskbar, dock and windowed apps, packed with:
 
-- **Games hub — 2,100+ titles** in one searchable library: 105 games bundled locally that open instantly (even offline), plus thousands more streamed from three online catalogs (UBG Hyper, DuckMath, GS & COS) with cover art, instant search and source toggles.
-- **Proxy browsers** — a real browser inside the site, powered by two switchable proxy engines (Ultraviolet and Scramjet), with tabs, bookmarks, history, zoom, fullscreen, a stealth window and 14 search engines with live suggestions.
-- **Discord-style chat app** — a themed chat experience matching the look and feel of Discord, built into the desktop.
-- **YouTube copy** — a full YouTube-style client with a music player, search, channels and playback inside the OS.
-- **59 live wallpapers** — animated video wallpapers with poster-frame picker, brightness/blur/night-light filters and adaptive theming.
-- **A suite of themed apps** — Veloura, Hanakuro, Sakurune, Kumora, Sakumo, Kurova, Numera, Sakuro, Kurocast, Nexora and Kuroshi — plus a settings app covering themes, accents, fonts, language, cursor, device metrics and a tab cloak that disguises the browser tab.
-- **Privacy by design** — everything runs client-side in your browser. No accounts, no analytics, no server of ours sees anything; your bookmarks, history and settings stay in your own browser's local storage.
+- **Games hub  2,100+ titles** in one searchable library: 105 games bundled locally that open instantly (even offline), plus thousands more streamed from three online catalogs (UBG Hyper, DuckMath, GS & COS) with cover art, instant search and source toggles.
+- **Proxy browsers** a real browser inside the site, powered by two switchable proxy engines (Ultraviolet and Scramjet), with tabs, bookmarks, history, zoom, fullscreen, a stealth window and 14 search engines with live suggestions.
+- **Discord-style chat app**  a themed chat experience matching the look and feel of Discord, built into the desktop.
+- **YouTube copy**  a full YouTube-style client with a music player, search, channels and playback inside the OS.
+- **59 live wallpapers** animated video wallpapers with poster-frame picker, brightness/blur/night-light filters and adaptive theming.
+- **A suite of themed apps**  Veloura, Hanakuro, Sakurune, Kumora, Sakumo, Kurova, Numera, Sakuro, Kurocast, Nexora and Kuroshi  plus a settings app covering themes, accents, fonts, language, cursor, device metrics and a tab cloak that disguises the browser tab.
+- **Privacy by design**  everything runs client-side in your browser. No accounts, no analytics, no server of ours sees anything; your bookmarks, history and settings stay in your own browser's local storage.
 
 Deployable to any static host (GitHub Pages, Netlify, Cloudflare Pages) with no build step, and runnable locally with the bundled optional server.
 
@@ -44,7 +44,7 @@ Deployable to any static host (GitHub Pages, Netlify, Cloudflare Pages) with no 
 ### Desktop and apps
 
 - A familiar desktop: start menu, taskbar, dock, windowed apps with minimize, maximize and close.
-- **Themed app experiences** including Veloura, Hanakuro, Sakurune, Kumora, Sakumo, Kurova, Numera, Sakuro, Kurocast, Nexora and Kuroshi.
+- **Themed app experiences** including Veloura, Hanakuro, Sakurane, Kumora, Sakumo, Kurova, Numera, Sakura, Kurocast, Nexora and Kuroshi.
 - Settings app covering themes, accents, fonts, language, cursor, device metrics and tab cloak.
 - **Four performance tiers** (High, Medium, Low, Potato) that throttle animation and compositing on weak hardware.
 - Adaptive theming that reacts to the wallpaper you pick.
@@ -61,7 +61,7 @@ Deployable to any static host (GitHub Pages, Netlify, Cloudflare Pages) with no 
 
 ### Run it online (no .bat, no Node needed)
 
-This copy of the project is fully static: every internal path is resolved relative to wherever the site is served from, so it works on GitHub Pages, Netlify, Cloudflare Pages or any web server — at the domain root or under a subpath. See **Deploying** below.
+This copy of the project is fully static: every internal path is resolved relative to wherever the site is served from, so it works on GitHub Pages, Netlify, Cloudflare Pages or any web server  at the domain root or under a subpath. See **Deploying** below.
 
 ### Run it locally (optional)
 
