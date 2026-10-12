@@ -1,0 +1,90 @@
+{
+  "origin": "https://invisiproxy.com",
+  "generated": "2026-10-01T05:44:20.035Z",
+  "files": [
+    {
+      "path": "/sw.js",
+      "bytes": 280
+    },
+    {
+      "path": "/scram/scramjet.js",
+      "bytes": 227109
+    },
+    {
+      "path": "/scram/controller.api.js",
+      "bytes": 17086
+    },
+    {
+      "path": "/scram/controller.sw.js",
+      "bytes": 4576
+    },
+    {
+      "path": "/scram/controller.inject.js",
+      "bytes": 6436
+    },
+    {
+      "path": "/scram/scramjet-utils.js",
+      "bytes": 10847
+    },
+    {
+      "path": "/scram/scramjet.wasm",
+      "bytes": 586279
+    },
+    {
+      "path": "/uv/sw.js",
+      "bytes": 303
+    },
+    {
+      "path": "/uv/uv.sw.js",
+      "bytes": 11933
+    },
+    {
+      "path": "/uv/uv.bundle.js",
+      "bytes": 373182
+    },
+    {
+      "path": "/uv/uv.config.js",
+      "bytes": 293
+    },
+    {
+      "path": "/uv/uv.handler.js",
+      "bytes": 19785
+    },
+    {
+      "path": "/uv/uv.client.js",
+      "bytes": 52361
+    },
+    {
+      "path": "/baremux/index.js",
+      "bytes": 8676
+    },
+    {
+      "path": "/baremux/worker.js",
+      "bytes": 2903
+    },
+    {
+      "path": "/epoxy/index.mjs",
+      "bytes": 1745144
+    },
+    {
+      "path": "/libcurl/index.mjs",
+      "bytes": 2110969
+    },
+    {
+      "path": "/scram/wasm_bg.wasm",
+      "error": "404 https://invisiproxy.com/scram/wasm_bg.wasm"
+    },
+    {
+      "path": "/scram/scramjet.wasm.js",
+      "error": "404 https://invisiproxy.com/scram/scramjet.wasm.js"
+    },
+    {
+      "path": "/scram/inject.js",
+      "error": "404 https://invisiproxy.com/scram/inject.js"
+    },
+    {
+      "path": "/epoxy/epoxy.wasm",
+      "error": "404 https://invisiproxy.com/epoxy/epoxy.wasm"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+wallpapers-original/
+_wpbuild/
+node_modules/
+*.log

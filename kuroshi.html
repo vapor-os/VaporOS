@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Kuroshi</title>
+  <link rel="icon" id="favicon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='%23ff8fb8'%3E%3Cpath d='M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z'/%3E%3Cpath transform='rotate(72 32 32)' d='M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z'/%3E%3Cpath transform='rotate(144 32 32)' d='M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z'/%3E%3Cpath transform='rotate(216 32 32)' d='M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z'/%3E%3Cpath transform='rotate(288 32 32)' d='M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='6' fill='%23fff2f7'/%3E%3Ccircle cx='32' cy='32' r='2.5' fill='%237c6cff'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+
+    <!-- ───────────────────────── boot / loading overlay ───────────────────── -->
+    <div class="boot" id="boot">
+      <div class="boot-inner">
+        <div class="boot-mark">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="#ff8fb8">
+              <path d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(72 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(144 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(216 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(288 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+            </g>
+            <circle cx="32" cy="32" r="4.6" fill="#fff2f7" />
+            <circle cx="32" cy="32" r="1.8" fill="#7c6cff" />
+          </svg>
+        </div>
+        <div class="boot-word">kuroshi</div>
+        <div class="boot-bar"><i id="bootBar"></i></div>
+        <div class="boot-status" id="bootStatus">Starting…</div>
+      </div>
+    </div>
+
+    <!-- ─────────────────────────────── chrome ─────────────────────────────── -->
+    <header class="chrome" id="chrome">
+      <div class="tabstrip" id="tabstrip">
+        <a class="brand" id="brandBtn" title="New tab">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <g fill="#ff8fb8">
+              <path d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(72 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(144 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(216 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+              <path transform="rotate(288 32 32)" d="M32 32C22 28 18 16 24 7c2.5 3.5 5 4.5 8 4.5s5.5-1 8-4.5c6 9 2 21-8 25z" />
+            </g>
+            <circle cx="32" cy="32" r="4.6" fill="#fff2f7" />
+            <circle cx="32" cy="32" r="1.8" fill="#7c6cff" />
+          </svg>
+          <span>kuroshi</span>
+        </a>
+        <div class="tabs" id="tabs" role="tablist"></div>
+        <button class="tab-add" id="tabAdd" title="New tab (Ctrl+T)" aria-label="New tab"></button>
+        <div class="tabstrip-tail">
+          <button class="icon-btn sm" id="btnLibrary" title="History & bookmarks (Ctrl+H)"></button>
+          <button class="icon-btn sm" id="btnSettings" title="Settings"></button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <div class="nav-group">
+          <button class="icon-btn" id="btnBack" title="Back (Alt+←)"></button>
+          <button class="icon-btn" id="btnForward" title="Forward (Alt+→)"></button>
+          <button class="icon-btn" id="btnReload" title="Reload (Ctrl+R)"></button>
+          <button class="icon-btn" id="btnHome" title="Home"></button>
+        </div>
+
+        <div class="omni" id="omni">
+          <span class="omni-badge" id="omniBadge" title="Search engine"></span>
+          <input id="omniInput" class="omni-input" type="text" spellcheck="false" autocomplete="off"
+                 placeholder="Search the web or enter a URL" aria-label="Address and search bar" />
+          <div class="omni-trail">
+            <button class="icon-btn xs" id="btnStar" title="Bookmark this page"></button>
+            <button class="icon-btn xs" id="btnCopy" title="Copy link"></button>
+          </div>
+          <div class="suggest" id="suggest" hidden></div>
+        </div>
+
+        <div class="tools">
+          <button class="chip" id="proxyChip" title="Switch proxy engine">
+            <span class="chip-dot"></span><span id="proxyLabel">Scramjet</span>
+          </button>
+          <button class="chip ghost" id="zoomChip" title="Zoom (Ctrl+/Ctrl-)"><span id="zoomLabel">100%</span></button>
+          <button class="icon-btn" id="btnNewWindow" title="Open in stealth window (about:blank)"></button>
+          <button class="icon-btn" id="btnFullscreen" title="Fullscreen (F11)"></button>
+        </div>
+      </div>
+
+      <div class="progress" id="progress"><i></i></div>
+    </header>
+
+    <!-- ─────────────────────────────── content ────────────────────────────── -->
+    <main class="content" id="content"></main>
+
+    <!-- ─────────────────────────── library panel ──────────────────────────── -->
+    <aside class="panel" id="panel" aria-hidden="true">
+      <div class="panel-head">
+        <div class="panel-tabs">
+          <button class="panel-tab active" data-view="history">History</button>
+          <button class="panel-tab" data-view="bookmarks">Bookmarks</button>
+        </div>
+        <button class="icon-btn sm" id="panelClose" title="Close"></button>
+      </div>
+      <div class="panel-search">
+        <input id="panelFilter" type="text" placeholder="Filter…" spellcheck="false" />
+      </div>
+      <div class="panel-body" id="panelBody"></div>
+      <div class="panel-foot">
+        <button class="btn ghost" id="panelClear">Clear</button>
+        <span class="panel-count" id="panelCount"></span>
+      </div>
+    </aside>
+
+    <!-- ────────────────────────────── settings ────────────────────────────── -->
+    <div class="scrim" id="settingsScrim" hidden>
+      <div class="modal" id="settings" role="dialog" aria-label="Settings">
+        <div class="modal-head">
+          <h2>Settings</h2>
+          <button class="icon-btn sm" id="settingsClose" title="Close"></button>
+        </div>
+        <div class="modal-body" id="settingsBody"></div>
+      </div>
+    </div>
+
+    <!-- ─────────────────────────────── popovers ───────────────────────────── -->
+    <div class="pop" id="menuProxy" hidden></div>
+    <div class="pop" id="menuZoom" hidden></div>
+
+    <!-- fullscreen peek bar -->
+    <div class="peek" id="peek">
+      <button class="icon-btn sm" id="peekBack"></button>
+      <button class="icon-btn sm" id="peekFwd"></button>
+      <button class="icon-btn sm" id="peekReload"></button>
+      <span class="peek-url" id="peekUrl"></span>
+      <button class="icon-btn sm" id="peekExit" title="Exit fullscreen"></button>
+    </div>
+
+    <div class="toasts" id="toasts"></div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
